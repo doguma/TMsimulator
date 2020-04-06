@@ -22,8 +22,10 @@ using namespace std;
         string myArray[100];
         string inputword;
         
-        cout << "Please enter a file name : ";
+        cout << "Please enter a file name," << endl;
+        cout << "sample files provided ( test3.txt, test2.txt ) : " << endl;
         cin >> filename;
+        
         
         
         cout << "Please enter the input word : ";
