@@ -22,15 +22,17 @@ using namespace std;
         string myArray[100];
         string inputword;
         
-        cout << "Please enter a file name," << endl;
-        cout << "sample files provided ( test3.txt, test2.txt ) : " << endl;
-        cin >> filename;
+        cout << "sample files :" << endl;
+        cout << "test3.txt  - this tm accepts L=01*" << endl;
+        cout << "test2.txt  - this tm recognizes strings in 0^n 1^n 0^n" << endl << endl;
+
         
+        cout << "Please enter a file name:" << endl;
+        cin >> filename;
         
         
         cout << "Please enter the input word : ";
         cin >> inputword;
-
 
             
         ifstream open_infile(filename);
@@ -67,12 +69,9 @@ using namespace std;
 
                     cout << inputword << endl << endl;
                     qstate = myArray[i][2];
-
-                    
+                 
                     inputword[position] = myArray[i][3];
 
-
-                    
                     if(myArray[i][4] == 'R'){
                         ++position;
                     }else if(myArray[i][4] == 'L'){
