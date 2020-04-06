@@ -41,12 +41,9 @@ using namespace std;
                 while (! open_infile.eof()){
                     getline (open_infile, line);
                     
-                    
                     std::size_t found = line.find("/");
                     line = line.substr(0,found);
-                    
-
-                    
+                        
                     std::string::iterator end_pos = std::remove(line.begin(), line.end(), ' ');
                     line.erase(end_pos, line.end());
                     
